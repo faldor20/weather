@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+	<ItemGroup>
+		<EmbeddedResource Remove="**\*.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Forms.Platform.WPF" Version="5.0.0.2196" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\weather\weather\weather.csproj" />
+	</ItemGroup>
+
+</Project>
